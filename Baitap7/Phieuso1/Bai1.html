@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai1</title>
+         <meta charset="UTF-8"> 
+    </head>
+    <body>
+        <p>On Focus()</p>
+        <input type="text" name="Dulieu" id="Dulieu" onfocus="myFunction()" >
+        <br>
+        <p>On Change()</p>
+        <input type="text" name="Dulieu" id="Dulieu" onchange="myFunction1()">
+        <script type="text/javascript">
+        var web;
+            function myFunction(){
+               web = window.open("","JavaScript Applicatin","height=200px,width= 200px");
+               web.document.write("Focus");
+            }
+            function myFunction1(){
+                web = window.open("","JavaScript","height = 100px,width = 100px");
+                web.document.write("Change");
+            }
+        </script>
+    </body>
+</html>

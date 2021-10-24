@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Phamvanbien_2019607190.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="header-all">
+        <div class="header">
+        <div class="img"><img src="./42057181205a664343340ed810e7aded.jpg" class="img1" alt=""></div>
+        <div class="logo"><span class="material-icons">
+            shopping_cart
+            </span>Cart</div>
+    </div>
+    <div class="header1">
+        <ul>
+            <li>Home</li>
+            <li>Brands</li>
+            <li>Gift Certificates</li>
+            <li>More</li>
+            <li>
+                <input type="text">
+            </li>
+        </ul>
+    </div>
+    </div>
+    <div class="content-all">
+        <div class="menu">
+            <ul>
+            <li style="background-color: #ffcc33;color: #000;">CATEGOTIES</li>
+            <li>Roses</li>
+            <li class="cha">Flower Basket
+                <ul class="con">
+                    <li><a href="">Macs</a></li>
+                    <li><a href="">Windows</a></li>
+                </ul>
+            </li>
+            <li>Gerberas</li>
+            <li>Orchids</li>
+           
+        </ul>
+    </div>      
+    <div class="content">
+        <ul>
+            <li class="content-1">
+                <div class="content-img"> <a href=""><img src="./42057181205a664343340ed810e7aded.jpg" alt="" class="img">
+                 
+             </div>
+                <div class="content-text">
+                    <p>Aliquam Quaerat Voluptatem</p>
+                    <p><span style="color: #ff33cc;">$110.00</span><span style="color: #999999;"><del>$122.00</del></span></p>
+                    <button style="background-color: #999999;color: #000;" class="nut">+Add To Cart</button>
+                </div>
+            </li>
+                <li class="content-1">
+                    <div class="content-img"> <a href=""><img src="./42057181205a664343340ed810e7aded.jpg" alt="" class="img">
+                 </div>
+                 <div class="content-text">
+                    <p>Aliquam Quaerat Voluptatem</p>
+                    <p><span style="color: #ff33cc;">$110.00</span><span style="color: #999999;"><del>$122.00</del></span></p>
+                    <button style="background-color: #999999;color: #000;" class="nut">+Add To Cart</button>
+                </div>
+                </li>
+                    <li class="content-1">
+                        <div class="content-img"> <a href=""><img src="./42057181205a664343340ed810e7aded.jpg" alt="" class="img">
+                        
+                     </div>
+                     <div class="content-text">
+                        <p>Aliquam Quaerat Voluptatem</p>
+                        <p><span style="color: #ff33cc;">$110.00</span><span style="color: #999999;"><del>$122.00</del></span></p>
+                        <button style="background-color: #999999;color: #000;" class="nut">+Add To Cart</button>
+                    </div></li>
+                        <li class="content-1">
+                            <div class="content-img"> <a href=""><img src="./42057181205a664343340ed810e7aded.jpg" alt="" class="img">
+                           
+                         </div>
+                         <div class="content-text">
+                            <p>Aliquam Quaerat Voluptatem</p>
+                            <p><span style="color: #ff33cc;">$110.00</span><span style="color: #999999;"><del>$122.00</del></span></p>
+                            <button style="background-color: #999999;color: #000;" class="nut">+Add To Cart</button>
+                        </div></li>
+        </ul>
+        <ul class="Hop">
+            <li style="background-color: #33cc66;">Seasonal Stock</li>
+            <li style="background-color:#ff6666">Fresh Always</li>
+            <li style="background-color:#ff66ff">Unique Bouquet</li>
+        </ul>
+    </div>  
+    </div>
+    <div class="Cuoi">
+        <label for="infor">Nhập số nguyên :</label> <input name="infor" type="text" id="infor"> <br>
+        <label for="result">Chữ số lớn nhất:</label> <input name="result" type="text" id="result" style="margin-top: 20px;"><br> <br>
+        <button type="button" id="count">Lớn nhất</button>
+        <button type="button">Hủy bỏ</button>
+    </div>
+    </body>
+    <script >
+        const button = document.querySelector("#count");
+        const inputValue = document.querySelector("#info");
+        const result = document.querySelector("#result");
+        inputValue.addEventListener('click', (e) => {
+            e.preventDefault();
+        })
+        function findMax(value) {
+            let array = value.split("").map((value) => +value);
+
+            let max = 0;
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] && array[i] > max) {
+                    max = array[i];
+                }
+            }
+            return max;
+        }
+
+        button.addEventListener("click", () => {
+            let value = inputValue.value;
+            if (value * 1) {
+                result.value = "Không phải số";
+            } else if (value * 1 < 0) {
+                result.value = "Không phải số dương";
+            } else {
+                result.value = findMax(value);
+            }
+        });
+
+    </script>
+</body>
+</html>

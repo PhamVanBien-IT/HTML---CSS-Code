@@ -1,0 +1,12 @@
+*{
+    background-color: #ffd2ff;
+}
+.text{
+ text-align: center;
+ color: #4caf50;
+}
+.text2{
+    word-spacing: 3px ;
+    text-indent: 50px;
+    padding:0 20px ;
+}

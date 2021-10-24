@@ -1,0 +1,22 @@
+.nav li{
+    list-style: none;
+    background-color: blue;
+    text-align: center;
+    width: 200px;
+    border: 1px dotted #fff;
+    height: 30px;
+    color: #fff;
+    position: relative;
+}
+.nav li:hover{
+    background-color: red;
+}
+.nav li:hover .subnav{
+    display: block;
+}
+.nav .subnav{
+    position: absolute;
+    display: none;
+    left: 161px;
+    top: 0px;
+}

@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: blue;
+}
+h1{
+    text-align: center;
+    color: #fff;
+}
+.content{
+    display: flex;
+    width: 100%;
+}
+.content .content-1{
+    background-color: brown;
+    width: 30%;
+}
+.content-1 ul li{
+    padding:10px;
+    border:#fff solid 1px;
+}
+.content-1 ul li:hover{
+    background-color: aqua;
+}
+.content-1 ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.content-1 .cha
+{
+    position: relative;
+}
+.content-1 .cha .con{
+    display: none;
+    position: absolute;
+    background-color: brown;
+}
+.content-1 .cha .con li {
+    list-style: none;
+}
+.content-1 .cha:hover .con{
+    display: block;
+    left: 100%;
+    top: 0px;
+}
+
+.content-2{
+    background-color: blue;
+    width: 70%;
+    margin: 30px 50px;
+    border-radius: 20px;
+}
+.content-2 .ND1{
+    text-align: center;
+    padding-top: 30px;
+}
+.bang{
+    align-items: center;
+}

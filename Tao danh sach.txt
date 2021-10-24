@@ -1,0 +1,58 @@
+	HTML
+<div id="menu">
+  <ul id="nav">
+   <li><a href="">TRANG CHỦ</a></li>
+   <li><a href="">GIỚI THIỆU</a></li>
+   <li><a href="">
+     CỬA HÀNG
+	<ul class="subnav">
+		<li><a href="">Hàng hóa</a></li>
+                <li><a href="">Mua bán</a></li>
+        </ul>
+      </a>
+   </li>
+   <li><a href="">TIN TỨC</a></li>
+  </ul>
+</div>
+
+	CSS
+#nav >li{
+ display:inline-block;
+}
+#nav li {
+ position: relative;
+}
+#nav >li >a{
+ color:#fff;
+} 
+#nav li a{
+ color:#fff;
+ text-decoration: none;
+ display: block;
+ padding-left:150px;
+ list-style-type: none;
+}
+#nav li:hover .subnav{
+ display:block;
+}
+#nav >li:hover >a{
+ color:red;
+}
+#nav .subnav{
+ position:absolute;
+ display:none;
+ height:100px;
+}
+#nav .subnav a{
+ color:#fff;
+}
+#nav .subnav li:hover{
+ color:#000;
+ background-color:darkgrey;
+}
+
+<form action="/action_page.php">
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+  <input type="submit" value="Submit">
+</form>

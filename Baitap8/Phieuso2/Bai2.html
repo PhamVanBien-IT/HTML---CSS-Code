@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="debai"></p>
+        <p id="demo"></p>
+        <script>
+            var st = "học Java thật vi diệu ";
+            document.getElementById("debai").innerHTML = "Câu văn là : " + st;
+            var st1 = st.charAt(0);
+            var st2 = st.charAt(5);
+            var dem1=0;
+            var dem2= 0;
+            function Sosanh(){
+                for(var i = 0 ; i< st.length;i++)
+            {
+                if(st1 == st.charAt(i))
+                {
+                    dem1+=1;
+                }
+                
+            }
+            for(var i = 0 ; i< st.length;i++)
+            {
+                if(st2 == st.charAt(i))
+                {
+                    dem2+=1;
+                }
+                
+            }
+            if(dem1 == dem2)
+            {
+              return "Số lượng xuất hiện cùa a là : " + dem1 + " , của h là : " + dem2 + " nên bằng nhau";
+            }
+            else {
+                return "Số lượng xuất hiện cùa a là : " + dem1 + " , của h là : " + dem2 + " nên không bằng nhau";
+            }
+            }
+            document.getElementById("demo").innerHTML = Sosanh();
+        </script>
+    </body>
+</html>

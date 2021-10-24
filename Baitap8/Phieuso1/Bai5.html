@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 5</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Chuỗi ban đầu là : "hello world"</p>
+        <p id="demo"></p>
+        <script>
+            var st = "hello world";
+            var st1 = st.slice(0,1);
+            var st2 =st1.toLocaleUpperCase();
+            var st3 = st.slice(1,5);
+            var st4 = st.slice(6,7);
+            var st5 = st4.toLocaleUpperCase();
+            var st6 = st.slice(7,11);
+            document.getElementById("demo").innerHTML = "Chuỗi sau khi sửa là : " + st2 + st3 + " " +st5 + st6;
+
+        </script>
+    </body>
+</html>

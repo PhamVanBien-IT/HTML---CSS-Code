@@ -1,0 +1,13 @@
+.nav li{
+ list-style: none;
+ background-color: blue;
+ float: left;
+ width: 15%;
+ border-left: 1px dotted #fff;
+ color: #fff;
+ padding: 10px 20px;
+ text-align: center;
+}
+.nav li:hover{
+    background-color: red;
+}

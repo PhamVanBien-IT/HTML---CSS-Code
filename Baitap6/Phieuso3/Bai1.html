@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <th colspan="2">Nhập dữ liệu</th>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td><input type="text" id="nhapa"></td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td><input type="text" id="nhapb"></td>
+            </tr>
+            <tr>
+                <td>c</td>
+                <td><input type="text" id="nhapc"></td>
+            </tr>
+            <tr>
+                <td>a'</td>
+                <td><input type="text" id="nhapa1"></td>
+            </tr>
+            <tr>
+                <td>b'</td>
+                <td><input type="text" id="nhapb1"></td>
+            </tr>
+            <tr>
+                <td>c'</td>
+                <td><input type="text" id="nhapc1"></td>
+            </tr>
+            <!-- <tr>
+                <td colspan="2" align="center">
+                <button type="reset">Xóa</button>
+                <button type="button" onclick="tinh()">Kết quả</button>
+            </td> -->
+            <!-- </tr> -->
+        </table>
+        <br>
+        <button type="button" onclick="tinh()">Kết quả</button>
+        <p id="demo"></p>
+        <script>
+            function tinh(){
+            var a = document.getElementById("nhapa").value;
+            var b = document.getElementById("nhapb").value;
+            var c = document.getElementById("nhapc").value;
+            var a1 = document.getElementById("nhapa1").value;
+            var b1 = document.getElementById("nhapb1").value;
+            var c1 = document.getElementById("nhapc1").value;
+            var D = a * b1 - b * a1;
+            var Dx = c * b1 - b * c1;
+            var Dy = a * c1 - a1 * c;
+            var x,y ;
+               if (a == "" && b == "" && c == "" && a1 == "" && b1 == "" && c1 == "")
+               {
+                   document.getElementById("demo").innerHTML = "Hãy nhập dữ liệu";
+
+               }
+               else {
+                if(D == 0 && Dx == 0 && Dy == 0)
+            {
+                document.getElementById("demo").innerHTML = "Hệ vô số nghiệm";
+            }
+            else { if(Dx != 0 || Dy != 0)
+            {
+                document.getElementById("demo").innerHTML = "Hệ vô nghiệm";
+            }
+            else {
+                 x = Dx / D ;
+                 y = Dy / D ;
+                 document.getElementById("demo").innerHTML = "Hệ có nghiệm duy nhất x :" + x + " và y :" + y;
+            }
+            }
+               }
+            }   
+        </script>
+    </body>
+</html>

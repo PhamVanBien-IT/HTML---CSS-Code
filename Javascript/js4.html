@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js4</title>
+        <meta charset="UFT-8">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <button type="button" onclick="openWindow()">OpenWindow</button>
+        <button type="button" onclick="closeWindow()">CloseWindow</button>
+        <button type="button" onclick="reSize()">ReSize</button>
+        <button type="button" onclick="myFunction()">Hop thoai</button>
+        <button type="button" onclick="myFunction1()">Try it</button>
+        <p id="demo"></p>
+        <script>
+            var w = window.innerWidth ;
+            var h = window.innerHeight;
+            document.getElementById("demo").innerHTML = "Width: " + w + " Height: " + h;
+            
+            var Web;
+            function openWindow(){
+                Web =  window.open("","MyWindow","width = 200px ,height = 100px");
+            }
+            function closeWindow(){
+                Web = window.close();
+            }
+            function reSize(){
+                Web = reSize(500,600);
+                Web = window.focus();
+            }
+            function myFunction(){
+                confirm("Canh Bao");
+            }
+            function myFunction1(){
+                var person = prompt("Dien thong tin","Bien");
+                if(person != null)
+                {
+                    document.getElementById("demo").innerHTML = "Hello "+ person +" How ???"
+                }
+            }
+        </script>
+    </body>
+</html>

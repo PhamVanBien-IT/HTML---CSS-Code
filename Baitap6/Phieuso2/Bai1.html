@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Phương trình ax<sup>2</sup>+ bx + c = 0</p>
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <th colspan="2">Nhập giá trị</th>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>
+                    <input type="text" id="nhapa">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>b</td>
+                <td> 
+                    <input type="text" id="nhapb">
+                </td>
+            </tr>
+            <tr>
+                <td>c</td>
+                <td>
+                    <input type="text" id="nhapc">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button type="button" onclick="tinh()">Kết quả</button>
+        <p id="demo"></p>
+        <script>
+            function tinh(){
+                var a = document.getElementById("nhapa").value;
+                var b = document.getElementById("nhapb").value;
+                var c = document.getElementById("nhapc").value;
+                var del = b * b - (4 * a * c);
+                var x1, x2;
+                   if(a == "" && b =="" && c=="")
+                       document.getElementById("demo").innerHTML = "Yêu cầu nhập dữ liệu";
+                   else {
+                    if(del < 0)
+            document.getElementById("demo").innerHTML = "Phương trình vô nghiệm";
+        else if(del == 0){
+            x1 = -b / (2.0 * a);
+            document.getElementById("demo").innerHTML = "Phương trình có một nghiệm kép x = " + x1;
+        }else{
+            x1 = (-b - Math.sqrt(del)) / (2 * a);
+            x2 = (-b + Math.sqrt(del)) / (2 * a);
+            document.getElementById("demo").innerHTML = "Phương trình có 2 nghiệm phân biệt <br>x1 = " + x1 + "<br> x2 = " + x2;
+        }
+                   }
+                }
+
+        </script>
+    </body>
+</html>

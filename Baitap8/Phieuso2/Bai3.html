@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 3</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var st ="I love You";
+            var st1 = "";
+            function chuyendoi(){
+                for(var i = 0;i< st.length ; i++)
+                {
+                    if(st[i] > "A" && st[i] < "Z")
+                    {
+                        st1 += st[i].toLowerCase();
+                    }
+                    else{
+                        st1 += st[i].toUpperCase();
+                    }
+                }
+                return st1;
+            }
+            document.getElementById("demo").innerHTML = "Chuỗi ban đầu là : " + st + "<Br> Chuỗi sau khi chuyển đổi là : " +chuyendoi();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jas2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Dat nuoc</p>
+        <p id="demo"></p>
+        <script>
+             var person = {
+                 fullName : function (city ,country){
+                     return this.firstName + " " + this.lastName + " " + city + "," + country;
+                 }
+             }
+             var person1 = {
+                 firstName = "Tuan";
+                 lastName = "Le"
+             }
+             var person2 = {
+                 firstName = "Hoai";
+                 lastName = "Nguyen";
+             }
+             var x = person.fullName.call(person1."Ha noi" , "Viet Nam");
+             document.getElementById("demo").innerHTML = x ;
+             
+        </script>
+    </body>
+</html>

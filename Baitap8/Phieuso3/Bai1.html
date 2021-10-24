@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Tính tổng 2 mảng</p>
+        <p id="demo"></p>
+        <script>
+            var array1 = [1,0,2,3,4];
+            var array2 = [3,5,6,7,8,13];
+            var n = array1.length;
+            var m = array2.length;
+            var array3 = new Array();
+            if(n<m){
+                for(var i = 0 ;i<n ;i++)
+                {
+                    array3[i] = array1[i] + array2[i];
+                }
+                for(var i = n ; i <m ;i++)
+                {
+                    array3[i] = array2[i];
+                }
+            }
+            document.getElementById("demo").innerHTML ="Mảng 1 là : "+ array1 + "<Br> Mảng 2 là : " + array2 + "<Br> Kết quả là : " +array3;
+        </script>
+    </body>
+</html>

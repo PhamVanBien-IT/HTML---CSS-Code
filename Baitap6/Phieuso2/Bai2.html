@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <button onclick="bam(1)">1</button>
+        <button onclick="bam(2)">2</button>
+        <button onclick="bam(3)">3</button>
+        <button onclick="bam(4)">4</button>
+        <button onclick="bam(5)">5</button>
+        <button onclick="sub()">-</button>
+        <br>
+        <button onclick="bam(6)">6</button>
+        <button onclick="bam(7)">7</button>
+        <button onclick="bam(8)">8</button>
+        <button onclick="bam(9)">9</button>
+        <button onclick="bam(0)">0</button>
+        <button onclick="tinh()">=</button>
+        
+        <p>Kết quả :</p>
+        <p id="result"></p>
+        <script>
+            var tru = 0;
+            var a = 0;
+            function bam(x){
+                a = x;
+            }
+            function sub(){
+                tru += a;
+            }
+            function tinh(){
+                var kq = document.getElementById("result");
+                kq.textContent = tru - a ;
+                tru = 0;
+                a = 0;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,308 @@
+
+*{
+    /* padding: 0; */
+    margin: 0;
+}
+.gachchan{
+    text-decoration: none;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    background-color: #3f3a3a;
+    width: 100%;
+    height: 20px;
+    padding-top: 10px;
+}
+#header .ti-home{
+    padding-left: 100px;
+    font-size: 15px;
+    color:darkgrey;
+    float: left;
+    width: 30%;
+}
+#header .ti-alarm-clock{
+    font-size: 15px;
+    color: darkgrey;
+    float: left;
+    width: 35%;
+}
+#header .ti-notepad{
+    font-size: 15px;
+    color: darkgrey;
+    float: left;
+    width: 20%;
+}
+#header .ti-arrow-right{
+    font-size: 15px;
+    color: darkgrey;
+}
+#header2{
+    background-color: saddlebrown;
+    height: 100px;
+    padding-top: 50px;
+}
+#header2 .img{
+    float: left;
+    width: 30%;
+}
+#header2 .header2-img{
+    width: 100px;
+    height: 100px;
+    padding-left: 100px;
+}
+#header2 .ti-mobile{
+    padding-left: 100px;
+    font-size: 20px;
+    color: #fff;
+    
+}
+#header2 .Gia{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 100px;
+}
+#header2 .Gia:hover{
+    color: yellow;
+}
+#header2 .ti-search{
+  padding-left: 200px;
+  color: #fff;
+  font-size: 20px;
+}
+#menu{
+    background-color: #ffca44;
+    height: 40px;
+    padding-top: 10px;
+}
+#nav >li{
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+#nav >li >a {
+    color: #fff;
+}
+#nav li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding-left: 150px;
+    list-style-type: none;
+}
+#nav li:hover .subnav{
+    display: block; 
+}
+#nav >li:hover >a{
+    color: red;
+}
+#nav .subnav{
+    position: absolute;
+    display: none;
+    height: 100px;
+}
+#nav .subnav a{
+    color: #fff;
+}
+#nav .subnav li:hover{
+    color: #000;
+    background-color:darkgrey;
+}
+#section{
+   background-image: url(./QD0u82.jpg);
+   height: 400px;
+   width: 100%;
+   padding-top: 30px;
+}
+#section .section-sale{
+    padding-left:200px;
+    float: left;
+    width: 50%;
+}
+#section .section-text{
+    font-size: 50px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    padding-right: 200px;
+}
+#section .section-text1{
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding-right: 180px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#section .section-text2{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 180px;
+}
+#section .section-text3{
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 900px;
+}
+#section .section-text4{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #ff5440;
+    padding: 1px 10px;
+}
+#section .section-text4:hover{
+    background-color: chartreuse;
+}
+.Contaner{
+    padding-top: 20px;
+    width: 100%;
+    height: 200px;
+}
+.Contaner .nav{
+    padding: 10px 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Contaner .nav li{
+    float: left;
+    width: 30%;
+    list-style: none;
+    margin-left: 20px;
+}
+.Contaner .dog2,
+.Contaner .cat,
+.Contaner .dog{
+   height: 150px;
+}
+.Contaner .Contaner-text{
+    padding-top: 20px;
+    color: #fff;
+    font-size: 25px;
+}
+.Contaner .Contaner-text1
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+.Contaner .Contaner-text2{
+    font-size: 25px;
+    color: #fff;
+}
+.Contaner .Contaner-text3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#SP{
+    width: 100%;
+    height: 600px ;
+}
+#SP .nav1 li,
+#SP .nav{
+    list-style: none;
+}
+#SP .nav1 li,
+#SP .nav li{
+    float: left;
+    width: 16%;
+    padding: 20px 50px;
+}
+#SP .nav1 li:hover,
+#SP .nav li:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+#SP .nav1 li{
+    border: 1px solid #d1adac;
+    margin-left: 18px;
+}
+#SP .nav1 .SP-text{
+    color: #d1adac;
+    text-align: center;
+    font-size: 13px;
+}
+#SP .nav1 .SP-text1{
+    color:dimgray;
+    text-align: center;
+    padding-top: 20px;
+}
+#SP .nav1 .SP-text2{
+    font-weight: bold;
+    font-size: 20px;
+    color: orange;
+    text-align: center;
+    padding:20px;
+}
+#SP .nav1 .SP-text3{
+    text-align: center;
+    font-size: 15px;
+    color: dimgray;
+    border: 1px solid ;
+    height: 20px;
+}
+#SP .nav1 .SP-text3:hover{
+    background-color: darkgreen;
+    color: #fff;
+}
+#content{
+    width: 100%;
+    height: 200px;
+} 
+#content .nav2 li{
+    float: left;
+    width: 45%;
+    text-align: center;
+    list-style: none;
+    height: 130px;
+    margin-left: 40px;
+}
+#content .content-text{
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 15px;
+}
+#content .content-text1{
+    color: #fff;
+    font-size: 20px;
+}
+#List{
+    width: 100%;
+    height: 400px;
+}
+#List .nav3 li{
+    float: left;
+    width: 20%;
+    margin-left: 45px;
+    list-style: none;
+    font-weight:bold;
+    font-size: 20px;
+}
+#List .nav4 li{
+    float:left;
+    width: 20%;
+    margin-left: 45px;
+    list-style: none;
+    padding-top: 20px;
+    
+}
+#List .nav4 li a{
+    color: #3f3a3a;
+}
+#List .nav4 li a:hover{
+    color: red;
+}
+#Footer{
+    background-color:#ff5440;
+    width: 100%;
+    height: 300px;
+}

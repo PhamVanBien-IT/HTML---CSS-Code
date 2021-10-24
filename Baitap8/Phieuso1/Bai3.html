@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 3</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="debai"></p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+           var dem = 0;
+           var arr1 = [3,'a','a','a',2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+           var arr2 = [2,3,4,9,'a'];
+           var arr3 = new Array();
+           document.getElementById("debai").innerHTML = "Đề bài : [ " + arr1 + " ]";
+           document.getElementById("demo").innerHTML = "Tìm số lần xuất hiện của từng phần tử trong dãy : [ " + arr2 + " ]";
+           for(var i = 0 ; i < arr2.length ;i++)
+           {
+               for(var j = 0; j < arr1.length ; j++)
+               {
+                   if(arr2[i] == arr1[j])
+                   {
+                       dem += 1;
+                   }
+               }
+               arr3[i] = dem;
+               document.getElementById("demo1").innerHTML = "Số lần xuất hiện là : [ " + arr3 +" ]";
+               dem = 0;
+           }
+        </script>
+    </body>
+</html>

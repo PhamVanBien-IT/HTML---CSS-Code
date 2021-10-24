@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+               var st = "";
+               var color = ["Blue","Green","Red","Orange","Violet","Indigo","Yellow"];
+               var ten = ["th","st","nd","rd"];
+               for(var i = 0 ; i <color.length;i++)
+               {
+               if(i < 3){    
+                     st += "\"" + (i+1) +" " + ten[i+1] + " choice is " + color[i] + ".\"<br>" ;
+                }
+                }
+                document.getElementById("demo").innerHTML = st;
+            
+         </script>
+    </body>
+</html>

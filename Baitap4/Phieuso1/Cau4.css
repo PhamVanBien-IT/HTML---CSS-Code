@@ -1,0 +1,36 @@
+*{
+    background-color: #facfcf;
+    width: 960px;
+}
+.header .menu1 .nav1
+{
+    height: 30px;
+}
+.nav li{
+    color: #fff;
+    font-weight: bold;
+    float: left;
+    width: 17%;
+    list-style: none;
+    background-color: #420000;
+    padding: 10px 10px;
+}
+.header .menu2 .nav2{
+    float: left;
+    width: 25%;
+}
+.nav2 li{
+    list-style: none;
+    padding-bottom: 30px;
+    color: #fff;
+    padding-left: 10px;
+    background-color: #9d6f68;
+    width: 204px;
+}
+.content{
+    padding-top: 40px;
+}
+.content .text2{
+    font-weight: bold;
+    font-size: 16px;
+}

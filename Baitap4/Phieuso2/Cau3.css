@@ -1,0 +1,33 @@
+.nav >li{
+ display: inline-block;
+}
+.nav li{
+    position: relative;
+}
+.nav li{
+    list-style: none;
+    background-color: blue;
+    float: left;
+    width: 15%;
+    border-left: 1px dotted #fff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+   }
+.nav li:hover{
+       background-color: red;
+}
+.nav li:hover .subnav{
+    display: block;
+}
+.nav .subnav{
+    position: absolute;
+    display: none;
+    height: 500px;
+}
+.nav .subnav >li{
+   width: 20px; 
+}
+#nav .subnav li:hover{
+    background-color: red;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body> 
+        <p>Dãy số ban đầu : 3,8,7,6,5,-4,-3,2,1</p>
+        <p>Dãy sau khi sắp xếp là :</p>
+        <p id="demo"></p>
+        <script>
+            var arr = [3,8,7,6,5,-4,-3,2,1];
+            for(var i= 0 ; i< arr.length ; i++)
+              for(var j = 0 ; j < arr.length - i;j++)
+                  if(arr[j] < arr[j-1])
+                  {
+                        var tg = arr[j-1];
+                        arr[j-1] = arr[j];
+                        arr[j] = tg;
+                  }
+              document.getElementById("demo").innerHTML = arr;
+        </script>
+    </body>
+</html>

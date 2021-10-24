@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: aqua;
+    height: 200px;
+    width: 100%;
+}
+header .text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+header .img{
+    width: 500px;
+    height: 150px;
+    padding-left: 500px; 
+    padding-top: 7px;
+}
+nav{
+    background-color: brown;
+    height: 50px;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    line-height: 50px;
+}
+nav ul li{
+    height: 50px;
+    width: 25%;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+   
+}
+nav ul li:hover {
+    background-color: black;
+    
+}
+.subnav {
+    position: relative;
+}
+
+.con{
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+.con li {
+    justify-content: space-around;
+    width: 100px;
+}
+.subnav:hover .con{
+    display: flex;
+}
+section {
+    background-color: violet;
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+section .P1{
+    width: 40%;
+}
+section .P2{
+    width: 60%;
+}
+section .DS{
+    display: flex;
+    justify-content: space-around;
+}
+section .DS li{
+    list-style: none;
+}
+section .DS1{
+    display: flex;
+    justify-content: space-around;
+}
+section .DS1 li{
+    list-style: none;
+
+}
+footer{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}

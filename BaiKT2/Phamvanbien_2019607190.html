@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>De 4</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./Phamvanbien_2019607190.css">
+    </head>
+    <body>
+        <header>
+            <p>BÀI KIỂM TRA SỐ 2</p>
+        </header>
+        <div class="content">
+            <nav>
+                <ul>
+                    <li>Lập trình Java</li>
+                
+                    <li class="cha">Thiết kế Web
+                        <ul class="con">
+                            <li>Tài liệu HTML</li>
+                            <li>Tài liệu CSS</li>
+                            <li>Tài liệu JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>Lập trình C#</li>
+                    <li>Lập trình Web</li>
+                    <li>Lập trình hướng đối tượng</li>
+                    <li>Cơ sở dữ liệu</li>
+                </ul>
+            </nav>
+            <section>
+                <div class="Bang">
+                    <br>
+                    <P>DANH SÁCH HOÀN HẢO</P><br>
+                    <p>Số nguyên n : <input type="text" name="nhap" id="info" placeholder="Nhập số n" pattern="[0-9]"></p><br>
+                    <p>Hoàn hảo <= n : <input type="text" id="result"></p> <br>
+                    <button type="button" onclick="isPerfectNumber(n)" id="count">Tính</button>
+                </div>
+            </section>
+        </div>
+        <footer>
+             <P>BẢN QUYỀN THUỘC VỀ TEST2</P>
+        </footer>
+
+        <script>
+                 function isPerfectNumber(n) {
+                let sum = 0;
+                for(let i = 0; i < n; i++) {
+                    if( n % i == 0) {
+                        sum += i;
+                    }
+                }
+                return n == sum;
+            }
+
+
+            const btn = document.querySelector('#count') 
+            const result = document.querySelector('#result') 
+
+            btn.addEventListener('click', () => {
+
+                let arr = [];
+                let n = +document.querySelector('#info').value; 
+                console.log(n);
+                if( Number.isInteger(n) ) {
+                    
+                    for(let i = 1 ; i <= n ; i++) {
+
+                        if( isPerfectNumber(i) ) {
+                            arr.push(i);
+                        }
+
+                    }
+
+                }
+                
+                if ( arr.length == 0 ) {
+                    
+                    document.getElementById("result").value = "Không có số hoàn hảo"
+                }
+                else {
+                   
+                    document.getElementById("result").value = arr;
+                }
+
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+    <table border="1" style="border-collapse: collapse;background-color: pink;">
+        <tr>
+            <th colspan="2">Chương trình tra tuổi</th>
+        </tr>
+        <tr>
+            <td>Tuổi dương lịch</td>
+            <td><p id="duongLich"></p></td>
+        </tr>
+        <tr>
+            <td>Tuổi âm lịch</td>
+            <td><input type="text" id="amLich"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button type="reset" onclick="xoa()">Xóa</button>
+                <button type="submit" onclick="tracuu()">Tra cứu</button>
+            </td>
+        </tr>
+    </table>
+ 
+
+    <script>
+        var can = ["Canh", "Tân", "Nhâm", "Quí", "Giáp", "Ất", "Binh", "Đinh", "Mậu", "Kỷ"];
+        var chi = ["Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu", "Dần", "Mão", "Thìn", "Tỵ", "Ngọ", "Mùi"];
+
+        function tracuu(){
+            var tmp = document.getElementById("amLich");
+            var x = parseInt(tmp.value);
+            var tmpCan = can[x % 10];
+            var tmpChi = chi[parseInt((x % 100) % 12)];
+            document.getElementById("duongLich").innerHTML = tmpCan + " " + tmpChi;
+        }
+        function xoa(){
+           document.getElementById("amLich").value = "";
+        }
+    </script>
+</body>
+</html>

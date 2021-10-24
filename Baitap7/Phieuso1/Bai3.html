@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai3</title>
+         <meta charset="UTF-8">  
+         <link rel="stylesheet" href="./Bai3.css">
+    </head>
+    <body>
+        <div onclick="Thaydoi()"> 
+        <img src="./anh1.jpg" alt="" style="padding-left: 500px;padding-top: 200px;" id = "anh1">
+        <img src="./anh2.jpg" alt="" style="padding-left: 500px;padding-top: 200px;" id = "anh2">
+        </div>
+        <script>
+            var check = true;
+            function Thaydoi(){
+                if(check)
+            {
+                document.getElementById("anh1").style.zIndex = -1;
+                document.getElementById("anh2").style.zIndex = 1;
+                check = false;
+            }else if(!check){
+                document.getElementById("anh1").style.zIndex = 1;
+                document.getElementById("anh2").style.zIindex = -1;
+                check = true;
+            }
+            }
+        </script>
+    </body>
+</html>

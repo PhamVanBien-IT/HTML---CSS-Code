@@ -1,0 +1,47 @@
+#video{
+    float: left;
+    width: 20%;
+    padding-right: 10px;
+}
+.class1{
+   height: 100px;
+   background-color: royalblue;
+   color: #fff;
+   text-align: center;
+}
+.class2{
+    background-color: #000;
+    height: 50px;
+}
+.class3{
+    background-color: red;
+    color: yellow;
+    height: 600px;
+    text-align: center;
+}
+.class4{
+    height: 50px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+#nav{
+    background-color: #000;
+    height: 25px;
+}
+#nav .nav-text{
+    color: #fff;
+}
+#setion{
+ float: left;
+ width: 50%;
+ margin-top: 20px;
+ margin-right: 10px;
+}
+#footer{
+    background-color: #000;
+    text-align: center;
+}
+#footer .footer-text{
+    color: #fff;
+}

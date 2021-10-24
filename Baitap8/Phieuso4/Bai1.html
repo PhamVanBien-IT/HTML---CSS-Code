@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="debai"></p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            var array1 = [1,2,3,4,1,2,2,1];
+            var array2 = [1,2,3,4];
+            var dem = 0;
+            var i = 0;
+            var array3 = new Array(4);
+            var Max = 0;
+            var array4 = new Array();
+            document.getElementById("debai").innerHTML = "Đề bài : [ " + array1 + " ]" ;
+                for(var i = 0;i < array2.length; i++)
+                {
+                    for(var j = 0; j< array1.length ; j++)
+                    {
+                        if(array2[i] == array1[j])
+                      {
+                         dem += 1;
+                      }
+                    }
+                    array3[i] = dem;
+                    document.getElementById("demo").innerHTML ="Số lần xuất hiện là : [ " + array3 + " ]";
+                    dem = 0;
+                }
+                for(var i = 0;i< array3.length;i++)
+                {
+                    if(Max < array3[i])
+                    {
+                        Max = array3[i];
+                    }
+                }
+                for(var i = 0;i< array3.length;i++)
+                {
+                    if(array3[i] == Max)
+                    {
+                        array4[i] = array2[i];
+                    }
+                }
+                document.getElementById("demo1").innerHTML = "Kết quả là : [ " + array4 + " ]";
+        </script>
+    </body>
+</html>

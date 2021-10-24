@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js3</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    
+    <p id="demo1"></p>
+    <button type="button" onclick="myFunction1()">Loi chao</button>
+    
+    <p id="demo2"></p>
+    <button type="button" onclick="myFunction2()">Tinh toan</button>
+    
+    <p id="demo3"></p>
+    
+    <p id ="demo4"></p>
+    <script>
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "Thay doi";
+        }
+        
+        function myFunction1(){
+        var greeting;  
+        var time = new Date().getHours();
+        if(time < 10)
+        {
+            greeting = "Good morning";
+        }
+        else{
+            greeting = "Good night ";
+        }
+        document.getElementById("demo1").innerHTML = greeting;
+        }
+        function myFunction2(){
+            var  x = function(a,b) {return a*b};
+             document.getElementById("demo2").innerHTML = x(5,5);
+        }
+        var text = "";
+        for(var i = 0; i<5 ;i++)
+        {
+            text += "So " + i + "<br>";
+        }
+        document.getElementById("demo3").innerHTML= text;
+
+        function myFunction3(a,b){
+            return a*b;
+        }
+        document.getElementById("demo4").innerHTML = myFunction3(2,5);
+    </script>
+</body>
+</html>

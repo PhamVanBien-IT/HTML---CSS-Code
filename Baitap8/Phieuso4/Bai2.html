@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 2</title>
+        <meta charset="UTF-8">
+    </head>
+    <body style="display: flex;justify-content: space-around;">
+        <button type="button" onclick="Mahoa()">Ma hoa</button>
+        <p id="demo"></p>
+        <button type="button" onclick="Giaima()">Giai ma</button>
+        <p id="demo1"></p>
+        <button type="button" onclick="Thoat()">Thoát</button>
+        <script>
+            var array1 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
+            var array2 = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+            var index = 0;
+            var chu = "";
+            var so = "";
+            function Mahoa(){
+                var Nhapso =  prompt("Nhập dãy mã hóa : ",1);
+                for(var i = 0 ;i< array1.length ; i++)
+            {   
+                index = eval(Nhapso); 
+                if(index == i)
+                {
+                    chu += array2[i];
+                }
+                document.getElementById("demo").innerHTML ="Số được mã hóa thành : " + chu;
+            }
+            }
+
+            function Giaima(){
+                var Nhapchu = prompt("Nhap chu can giai ma","b");
+                for(var i = 0 ;i< array1.length ; i++)
+            {   
+                if(Nhapchu == array2[i])
+                {
+                    so += i;
+                }
+                document.getElementById("demo1").innerHTML ="Chữ được giải mã thành : " + so;
+            }
+            }
+            function Thoat(){
+                close();
+            }
+
+        </script>
+    </body>
+</html>

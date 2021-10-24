@@ -1,0 +1,16 @@
+*{
+    background-color: chocolate;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./20200310103152-tr-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.text{
+    text-align: center;
+    color: #ffcc00; 
+}
+.text1{
+    padding: 0 10px;
+    color: #fff;
+}

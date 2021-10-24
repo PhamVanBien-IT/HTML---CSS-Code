@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 6</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="ketqua"></p>
+        <script>
+            var st = "học Java thật vi diệu";
+            document.getElementById("demo").innerHTML ="Chuỗi là : "+  st;
+            function Kiemtra(){
+                var st1 = st.indexOf('Java');
+                if(st1 == 0){
+                    return "Chuỗi bắt đầu bằng Java";
+
+                }
+                else {
+                    return "Chuỗi không bắt đầu bằng Java";
+                }
+            }
+            document.getElementById("ketqua").innerHTML = Kiemtra();
+            
+        </script>
+    </body>
+</html>
