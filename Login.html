@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        border: 1px solid gray;
+        padding: 20px;
+      }
+      main > * {
+        margin: 10px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h3>Login Information</h3>
+      <hr />
+      <div class="username">
+        <label for="username">Username:</label>
+        <input type="text" id="username" />
+      </div>
+      <div class="password">
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+      </div>
+      <div class="remember">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember</label>
+      </div>
+      <div class="button">
+        <button onclick="login()">Login</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </main>
+    <script>
+      const usernameInput = document.getElementById("username");
+      const passwordInput = document.getElementById("password");
+
+      function login() {
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+        const regPassword = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\S+$).{8,}$/;
+        const matchedPassword = regPassword.test(password);
+        if (matchedPassword && username) {
+          alert("Bạn đã đăng nhập thành công");
+        } else {
+          alert("Tên người dùng hoặc mật khẩu không hợp lệ");
+        }
+      }
+
+      function reset() {
+        usernameInput.value = "";
+        passwordInput.value = "";
+      }
+    </script>
+  </body>
+</html>
